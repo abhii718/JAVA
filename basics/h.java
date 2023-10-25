@@ -1,3 +1,6 @@
-package basics;
-class static int main(agrs[], )
- System.out.println("Hello, World!");
+
+public class h {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
