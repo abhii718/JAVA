@@ -1,4 +1,10 @@
-   public static void main(String[] args) {
+//         *****
+//       *****
+//     *****
+//   *****
+// *****
+public class patt11 {
+    public static void main(String[] args) {
         int n = 5;
         // upper half
         for (int i = 1; i <= n; i++) {
