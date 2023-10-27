@@ -1,4 +1,4 @@
-package basics;
+
 public class types {
     public static void main(String[] args) {
         // priitive types
@@ -10,11 +10,11 @@ public class types {
         // double -8
         // char -2
         // boolean -2 1 true/false
-    //     byte age = 30;
-    //     int phone = 1234567890;
-    //     long phone2 = 12345678900L;
-    //     float pi = 3.14F;
-    //     boolean inAdult = false;
+        //     byte age = 30;
+        //     int phone = 1234567890;
+        //     long phone2 = 12345678900L;
+        //     float pi = 3.14F;
+        //     boolean inAdult = false;
 
         // non - primitive types
     String name = "abhhii";
