@@ -1,4 +1,4 @@
-public class pattern3 {
+public class tempCodeRunnerFile {
     public static void main(String[] args) {
         int n = 4;
         int m = 5;
