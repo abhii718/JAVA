@@ -9,7 +9,7 @@ public class Countpathmaze {
    }
 
 
-   public static void main(String args[]) {
+   public static void main(String args[]){
        int m = 4, n = 5;
        System.out.println(countPaths(0, 0, m, n));
    }
