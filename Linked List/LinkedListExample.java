@@ -1,110 +1,87 @@
-import java.util.*;
-class LinkedListExample {
-
-    public static void main(String args[]) {
-        LinkedList<String> list = new LinkedList<String>();
-
-        list.addFirst("Abhii");
-        list.addFirst("name");
-        list.addFirst("my");
-        System.out.println(list);
-
-        list.add(2, "is");
-        System.out.println(list);
-    }
-}
-
-class LL {
-
+public class LinkedListExample {
     Node head;
     private int size;
 
-    LL() {
-        size = 0;
-    }
-
-    public class Node {
+    public static class Node {
         String data;
         Node next;
 
         Node(String data) {
             this.data = data;
             this.next = null;
-            size++;
         }
     }
 
-    public void addFirst(String data) {
-        Node newNode = new Node(data);
-        newNode.next = head;
-        head = newNode;
+    LinkedListExample() {
+        size = 0;
     }
 
+    // Add a new node to the end of the linked list
     public void addLast(String data) {
         Node newNode = new Node(data);
 
         if (head == null) {
             head = newNode;
-            return;
+        } else {
+            Node current = head;
+            while (current.next != null) {
+                current = current.next;
+            }
+            current.next = newNode;
         }
 
-        Node lastNode = head;
-        while (lastNode.next != null) {
-            lastNode = lastNode.next;
-        }
-
-        lastNode.next = newNode;
+        size++;
     }
 
+    // Add a new node to the beginning of the linked list
+    public void addFirst(String data) {
+        Node newNode = new Node(data);
+        newNode.next = head;
+        head = newNode;
+        size++;
+    }
+
+    // Print the elements of the linked list
     public void printList() {
-        Node currNode = head;
-
-        while (currNode != null) {
-            System.out.print(currNode.data + " -> ");
-            currNode = currNode.next;
+        Node current = head;
+        while (current != null) {
+            System.out.print(current.data + " ");
+            current = current.next;
         }
-
-        System.out.println("null");
+        System.out.println();
     }
 
-    public void removeFirst() {
-        if (head == null) {
-            System.out.println("Empty List, nothing to delete");
-            return;
-        }
-
-        head = this.head.next;
-        size--;
-    }
-
-    public void removeLast() {
-        if (head == null) {
-            System.out.println("Empty List, nothing to delete");
-            return;
-        }
-
-        size--;
-        if (head.next == null) {
-            head = null;
-            return;
-        }
-
-        Node currNode = head;
-        Node lastNode = head.next;
-        while (lastNode.next != null) {
-            currNode = currNode.next;
-            lastNode = lastNode.next;
-        }
-
-        currNode.next = null;
-    }
-
+    // Get the size of the linked list
     public int getSize() {
         return size;
     }
 
+    // Remove the first node from the linked list
+    public void removeFirst() {
+        if (head != null) {
+            head = head.next;
+            size--;
+        }
+    }
+
+    // Remove the last node from the linked list
+    public void removeLast() {
+        if (head != null) {
+            if (head.next == null) {
+                head = null;
+            } else {
+                Node current = head;
+                while (current.next.next != null) {
+                    current = current.next;
+                }
+                current.next = null;
+            }
+            size--;
+        }
+    }
+
     public static void main(String args[]) {
-        LL list = new LL();
+        LinkedListExample list = new LinkedListExample();
         list.addLast("is");
         list.addLast("a");
         list.addLast("list");
@@ -112,7 +89,7 @@ class LL {
 
         list.addFirst("this");
         list.printList();
-        System.out.println(list.getSize());
+        System.out.println("Size: " + list.getSize());
 
         list.removeFirst();
         list.printList();
