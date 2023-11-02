@@ -15,10 +15,10 @@ public class Intersectionof2Array {
         }
         return count;
     }
-
     public static void main(String[] args) {
         int arr1[] = { 7, 3, 9 };
         int arr2[] = { 6, 3, 9, 2, 9, 4 };
         System.out.println(Intersection(arr1, arr2));
     }
 }
+
