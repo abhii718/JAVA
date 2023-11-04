@@ -15,8 +15,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Abhinay Singh/Desktop/java/Switch case - nested",
-      "program": "c:/Users/Abhinay Singh/Desktop/java/Switch case - nested/build/Debug/outDebug",
+      "cwd": "c:/Users/Abhinay Singh/Desktop/java/KK/Switch case - nested/New folder",
+      "program": "c:/Users/Abhinay Singh/Desktop/java/KK/Switch case - nested/New folder/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
