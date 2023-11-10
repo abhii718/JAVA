@@ -14,7 +14,7 @@ public class case1 {
             case 2: {
                 System.out.println("Sunday");
                 break;
-                }
+            }
             case 3: {
                 System.out.println("Monday");
                 break;
