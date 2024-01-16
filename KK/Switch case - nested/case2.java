@@ -11,8 +11,7 @@ public class case2 {
             case 1 -> System.out.println("Sunday");
             case 2 -> System.out.println("Monday");
             case 3 -> System.out.println("Tuesday");
-            case 4,5,6,7,8-> System.out.println("Thursday - saturday");
-
+            case 4, 5, 6, 7, 8 -> System.out.println("Thursday - saturday");
         }
         in.close();
     }
